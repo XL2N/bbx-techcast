@@ -29,7 +29,7 @@ main {
 /* NAVBAR */
 .navbar {
     background-color: var(--grafite-escuro);
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -41,12 +41,14 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 46px;
     padding: 0 20px;
 }
 
 .nav-linksleft, .nav-linksright {
     display: flex;
-    gap: 35px;
+    gap: 58px;
+    align-items: center;
 }
 
 .navbar a {
@@ -70,7 +72,7 @@ main {
 
 .logo-img {
     display: block;
-    width: 96px;
+    width: 46px;
     height: auto;
 }
 
@@ -154,30 +156,16 @@ main {
 }
 
 .speech-bubble {
-    background: var(--branco);
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 8px 20px;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 10px;
+    display: none;
 }
 
 .speech-bubble::after {
-    content: '';
-    position: absolute;
-    bottom: -9px;
-    left: 20px;
-    border-width: 10px 10px 0;
-    border-style: solid;
-    border-color: var(--branco) transparent;
-    display: block;
-    width: 0;
+    display: none;
 }
 
 .mascote-img {
     display: block;
-    width: 180px;
+    width: clamp(280px, 28vw, 420px);
     max-width: 100%;
     height: auto;
 }
@@ -201,8 +189,9 @@ main {
 
 .ia-banner-img {
     flex-shrink: 0;
-    width: 280px;
-    height: 160px;
+    width: min(45%, 504px);
+    aspect-ratio: 504 / 335;
+    height: auto;
     background: #111;
     border-radius: 8px;
     overflow: hidden;
