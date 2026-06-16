@@ -1,0 +1,129 @@
+/* SECAO EPISODIOS */
+.episodes-section {
+    max-width: 1100px;
+    margin: 54px auto 82px;
+    padding: 0 28px;
+}
+
+.episodes-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.episodes-heading h1 {
+    color: var(--texto-escuro);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.episodes-mascote {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.episodes-grid {
+    background-color: var(--laranja-vibrante);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 48px 44px;
+}
+
+.ep-card {
+    display: grid;
+    grid-template-columns: 220px 1fr 120px;
+    align-items: center;
+    gap: 22px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+}
+
+.ep-thumb {
+    position: relative;
+    width: 220px;
+    height: 130px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.ep-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ep-card h4 {
+    font-size: 22px;
+    color: var(--texto-escuro);
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.ep-card p {
+    font-size: 18px;
+    line-height: 1.32;
+    color: var(--branco);
+    margin-bottom: 0;
+    min-height: 0;
+}
+
+.ep-platforms {
+    border-top: 0;
+    border-left: 2px solid var(--grafite-escuro);
+    min-height: 56px;
+    padding-top: 0;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    font-size: 26px;
+    color: var(--grafite-escuro);
+}
+
+@media (max-width: 768px) {
+    .episodes-heading {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .episodes-mascote {
+        width: min(220px, 70vw);
+        align-self: center;
+    }
+
+    .episodes-grid {
+        padding: 32px 22px;
+    }
+
+    .ep-card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ep-thumb {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 262 / 156;
+    }
+
+    .ep-platforms {
+        border-left: 0;
+        border-top: 2px solid var(--grafite-escuro);
+        justify-content: flex-start;
+        min-height: 0;
+        padding: 16px 0 0;
+    }
+}
