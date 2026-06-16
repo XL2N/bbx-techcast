@@ -1,7 +1,7 @@
 /* HERO SECTION */
 .hero-section {
-    max-width: 1224px;
-    margin: 112px auto 96px;
+    max-width: 1100px;
+    margin: 76px auto 70px;
     padding: 0 28px;
 }
 
@@ -9,16 +9,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 58px;
 }
 
 .hero-text {
-    max-width: 620px;
+    max-width: 560px;
 }
 
 .hero-text h2 {
     color: var(--laranja-vibrante);
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -29,24 +29,24 @@
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: var(--texto-escuro);
-    margin: 14px 0 18px;
+    margin: 12px 0 16px;
     font-weight: 400;
     line-height: 1.15;
 }
 
 .hero-text p {
-    font-size: 22px;
-    line-height: 1.35;
+    font-size: 18px;
+    line-height: 1.45;
     color: #444;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 }
 
 .hero-cta {
     color: var(--laranja-vibrante);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: underline;
     text-underline-offset: 5px;
     transition: opacity 0.3s;
@@ -70,16 +70,16 @@
 
 .mascote-img {
     display: block;
-    width: clamp(360px, 36vw, 520px);
+    width: clamp(260px, 27vw, 390px);
     max-width: 100%;
     height: auto;
 }
 
 /* IA BANNER DESTAQUE */
 .ia-banner-section {
-    max-width: 1200px;
-    margin: 40px auto 80px;
-    padding: 0 20px;
+    max-width: 1100px;
+    margin: 24px auto 70px;
+    padding: 0 28px;
 }
 
 .ia-banner {
@@ -87,8 +87,8 @@
     border-radius: 12px;
     display: flex;
     align-items: center;
-    padding: 35px;
-    gap: 40px;
+    padding: 28px;
+    gap: 34px;
     color: var(--branco);
 }
 
@@ -111,8 +111,8 @@
 
 .ia-banner-content h3 {
     color: var(--laranja-vibrante);
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .ia-banner-content p {
