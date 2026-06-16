@@ -68,6 +68,12 @@ main {
     text-align: center;
 }
 
+.logo-img {
+    display: block;
+    width: 96px;
+    height: auto;
+}
+
 .logo-icon {
     font-size: 24px;
 }
@@ -170,7 +176,10 @@ main {
 }
 
 .mascote-img {
-    font-size: 80px;
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* IA BANNER DESTAQUE */
@@ -197,6 +206,13 @@ main {
     background: #111;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.ia-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .placeholder-art {
@@ -468,6 +484,10 @@ main {
     justify-content: center;
     gap: 10px;
     margin-bottom: 25px;
+}
+
+.footer-logo-img {
+    width: 120px;
 }
 
 .social-icons {
