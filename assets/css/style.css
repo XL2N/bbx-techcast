@@ -30,8 +30,6 @@ main {
 .navbar {
     background-color: var(--grafite-escuro);
     padding: 28px 0;
-    position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
@@ -231,11 +229,11 @@ main {
     color: #cccccc;
 }
 
-/* SEÇÃO EPISÓDIOS (Fundo Laranja Total da Imagem) */
+/* SEÇÃO EPISÓDIOS */
 .episodes-section {
-    background-color: var(--laranja-vibrante);
-    padding: 50px 20px 80px;
-    text-align: center;
+    max-width: 1224px;
+    margin: 60px auto 92px;
+    padding: 0 28px;
 }
 
 .section-badge {
@@ -249,28 +247,61 @@ main {
     margin-bottom: 40px;
 }
 
+.episodes-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.episodes-heading h1 {
+    color: var(--texto-escuro);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.episodes-mascote {
+    display: block;
+    width: 210px;
+    height: auto;
+}
+
 .episodes-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    background-color: var(--laranja-vibrante);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 68px 50px 62px;
 }
 
 .ep-card {
-    background-color: var(--branco);
-    border-radius: 12px;
-    padding: 24px;
+    display: grid;
+    grid-template-columns: 262px 1fr 150px;
+    align-items: center;
+    gap: 24px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
     text-align: left;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: none;
 }
 
 .ep-thumb {
     position: relative;
-    height: 170px;
+    width: 262px;
+    height: 156px;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.ep-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .play-btn {
@@ -289,24 +320,32 @@ main {
 }
 
 .ep-card h4 {
-    font-size: 18px;
+    font-size: 26px;
     color: var(--texto-escuro);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .ep-card p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-    min-height: 40px;
+    font-size: 22px;
+    line-height: 1.35;
+    color: var(--branco);
+    margin-bottom: 0;
+    min-height: 0;
 }
 
 .ep-platforms {
-    border-top: 1px solid #eee;
-    padding-top: 15px;
+    border-top: 0;
+    border-left: 2px solid var(--grafite-escuro);
+    min-height: 68px;
+    padding-top: 0;
+    padding-left: 28px;
     display: flex;
-    gap: 15px;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 32px;
     color: var(--grafite-escuro);
 }
 
@@ -511,6 +550,18 @@ main {
     .nav-container { flex-direction: column; gap: 15px; }
     .hero-container { flex-direction: column; text-align: center; }
     .ia-banner { flex-direction: column; text-align: center; }
+    .episodes-heading { flex-direction: column; gap: 20px; align-items: flex-start; }
+    .episodes-mascote { width: min(220px, 70vw); align-self: center; }
+    .episodes-grid { padding: 32px 22px; }
+    .ep-card { grid-template-columns: 1fr; gap: 14px; }
+    .ep-thumb { width: 100%; height: auto; aspect-ratio: 262 / 156; }
+    .ep-platforms {
+        border-left: 0;
+        border-top: 2px solid var(--grafite-escuro);
+        justify-content: flex-start;
+        min-height: 0;
+        padding: 16px 0 0;
+    }
     .podcast-info-boxes { flex-direction: column; }
     .team-grid { justify-content: center; }
 }
